@@ -1,5 +1,5 @@
 
-(rules PCB ESP32-LoRA-ADIO
+(rules PCB ATMega328-LoRa-Sol-ADIO
   (snap_angle 
     fortyfive_degree
   )
@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6)
+    (start_pass_no 9)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -54,13 +54,13 @@
   )
   (class default
     +5V Earth "Net-(C2-Pad1)" "Net-(C3-Pad1)" +3V3 "Net-(D1-Pad2)" "USB-D-" "USB-D+"
-    "unconnected-(J1-Pad4)" "Net-(J2-Pad2)" "ESP-AO" "ESP-AI" "Net-(J4-Pad1)" "Net-(JP1-Pad2)" "ESP-TX" "ESP-RX"
-    "Net-(J6-Pad1)" "Net-(JP1-Pad1)" "Net-(JP2-Pad3)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" RTS "EN_ESP32" "Net-(Q3-Pad1)"
-    DTR "IO0_ESP32" "unconnected-(U2-Pad9)" "unconnected-(U2-Pad10)" "unconnected-(U2-Pad11)" "unconnected-(U2-Pad12)" "unconnected-(U2-Pad15)" "unconnected-(U3-Pad6)"
-    "unconnected-(U3-Pad7)" "ESP-DIO" "UART-TX" "unconnected-(U3-Pad10)" "UART-RX" "Lora_DIO0" "Lora_RST" "Lora_DIO1"
-    "unconnected-(U3-Pad17)" "unconnected-(U3-Pad18)" "unconnected-(U3-Pad19)" "unconnected-(U3-Pad20)" "unconnected-(U3-Pad21)" "unconnected-(U3-Pad22)" "Lora_SCK" "unconnected-(U3-Pad24)"
-    "unconnected-(U3-Pad26)" "unconnected-(U3-Pad29)" "unconnected-(U3-Pad30)" "unconnected-(U3-Pad31)" "unconnected-(U3-Pad32)" "unconnected-(U3-Pad37)" "unconnected-(U4-Pad7)" "unconnected-(U4-Pad11)"
-    "unconnected-(U4-Pad12)" "unconnected-(U4-Pad16)" "Lora_MISO" "Lora_MOSI" "Lora_NSS"
+    "unconnected-(J1-Pad4)" "Net-(J2-Pad2)" "Net-(J6-Pad1)" "Net-(Q1-Pad1)" DTR "unconnected-(U2-Pad9)" "unconnected-(U2-Pad10)" "unconnected-(U2-Pad11)"
+    "unconnected-(U2-Pad12)" "unconnected-(U2-Pad15)" "Lora_DIO0" "Lora_RST" "Lora_DIO1" "Lora_SCK" "unconnected-(U4-Pad7)" "unconnected-(U4-Pad11)"
+    "unconnected-(U4-Pad12)" "unconnected-(U4-Pad16)" "Lora_MISO" "Lora_MOSI" "Lora_NSS" +BATT "Net-(BT2-Pad1)" "AT-RST"
+    "Net-(C8-Pad1)" +3.3VA "Net-(C11-Pad1)" "Net-(C12-Pad1)" "Net-(C13-Pad1)" "Net-(C15-Pad1)" "Net-(C16-Pad1)" "Net-(D3-Pad2)"
+    SCL SDA TX RX "SPI_SS" "Net-(L1-Pad2)" "unconnected-(U2-Pad14)" "DO_POWERON"
+    "unconnected-(U6-Pad1)" "unconnected-(U6-Pad2)" "CLOCK_INT" "unconnected-(U6-Pad11)" "unconnected-(U6-Pad25)" "unconnected-(U6-Pad26)" "unconnected-(U6-Pad32)" "unconnected-(U7-Pad1)"
+    "unconnected-(U7-Pad4)"
     (clearance_class default)
     (via_rule default)
     (rule

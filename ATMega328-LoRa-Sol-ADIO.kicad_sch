@@ -11590,7 +11590,7 @@
     (property "Value" "18650" (id 1) (at 167.64 183.3879 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650" (id 2) (at 163.83 182.626 90)
+    (property "Footprint" "Battery:BatteryHolder_MPD_BH-18650-PC2" (id 2) (at 163.83 182.626 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 163.83 182.626 90)
@@ -12332,7 +12332,7 @@
       (reference "#PWR0140") (unit 1) (value "+3.3VA") (footprint "")
     )
     (path "/c5a88760-ec4e-4d44-9244-a0070f391982"
-      (reference "BT1") (unit 1) (value "18650") (footprint "Battery:BatteryHolder_Keystone_1042_1x18650")
+      (reference "BT1") (unit 1) (value "18650") (footprint "Battery:BatteryHolder_MPD_BH-18650-PC2")
     )
     (path "/150e8d39-fc96-4381-ab55-5b22188e2083"
       (reference "BT2") (unit 1) (value "CR2032") (footprint "Battery:Battery_Panasonic_CR2032-VS1N_Vertical_CircularHoles")

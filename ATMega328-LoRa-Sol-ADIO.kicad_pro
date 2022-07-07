@@ -379,7 +379,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "ESP32-LoRA-ADIO-net.dsn",
+      "specctra_dsn": "ATMega328-LoRa-Sol-ADIO.dsn",
       "step": "",
       "vrml": ""
     },
