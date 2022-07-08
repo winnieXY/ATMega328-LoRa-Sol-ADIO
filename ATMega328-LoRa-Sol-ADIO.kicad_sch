@@ -10857,10 +10857,10 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x06") (at 233.68 153.67 270) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid 708f0346-bb99-4055-ad19-07185a4fa006)
     (property "Reference" "J7" (id 0) (at 232.41 157.48 90))
-    (property "Value" "Conn_01x06" (id 1) (at 232.41 160.02 90))
+    (property "Value" "" (id 1) (at 229.87 160.02 90))
     (property "Footprint" "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical" (id 2) (at 233.68 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -12413,7 +12413,7 @@
       (reference "J6") (unit 1) (value "SMA") (footprint "Connector_Coaxial:SMA_Amphenol_901-144_Vertical")
     )
     (path "/708f0346-bb99-4055-ad19-07185a4fa006"
-      (reference "J7") (unit 1) (value "Conn_01x06") (footprint "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical")
+      (reference "J7") (unit 1) (value "SPI") (footprint "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical")
     )
     (path "/37945251-8e34-4d85-9e9d-82a9160102c8"
       (reference "JP1") (unit 1) (value "Jumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
