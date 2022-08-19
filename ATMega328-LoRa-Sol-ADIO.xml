@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>D:\Tmp\ESP32-LoRa-ADIO\ESP32-LoRA-ADIO\ESP32-LoRA-ADIO.kicad_sch</source>
-    <date>24.05.2022 16:51:26</date>
+    <source>D:\Git\ATMega328-LoRa-Sol-ADIO\ATMega328-LoRa-Sol-ADIO.kicad_sch</source>
+    <date>18.08.2022 14:09:54</date>
     <tool>Eeschema (6.0.5)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>ESP32-Lora-ADIO</title>
+        <title>ATMega-Solar-Lora-Node</title>
         <company>-</company>
         <rev>0</rev>
         <date>2022-05-20</date>
-        <source>ESP32-LoRA-ADIO.kicad_sch</source>
+        <source>ATMega328-LoRa-Sol-ADIO.kicad_sch</source>
         <comment number="1" value="(c) Patrick Winnertz &lt;patrick@winnertz.eu&gt;"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -24,238 +24,642 @@
     </sheet>
   </design>
   <components>
-    <comp ref="C1">
-      <value>100nF 25V X5R</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+    <comp ref="BT1">
+      <value>18650</value>
+      <footprint>Battery:BatteryHolder_MPD_BH-18650-PC2</footprint>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8c5e9246-dd7c-4eee-8aa4-010d81485142</tstamps>
+      <tstamps>c5a88760-ec4e-4d44-9244-a0070f391982</tstamps>
+    </comp>
+    <comp ref="BT2">
+      <value>CR2032</value>
+      <footprint>Battery:Battery_Panasonic_CR2032-VS1N_Vertical_CircularHoles</footprint>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>150e8d39-fc96-4381-ab55-5b22188e2083</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>10uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d305005-8236-4020-a82c-ae1b47a3b796</tstamps>
     </comp>
     <comp ref="C2">
       <value>22pF 50V C0G</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810121815_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C1653</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C1653"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>54fe2836-4d0b-4e0c-839f-be5fb480ea04</tstamps>
     </comp>
     <comp ref="C3">
       <value>22pF 50V C0G</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810121815_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C1653</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C1653"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>958824be-cfbe-4c67-ab46-c54002beceb0</tstamps>
     </comp>
     <comp ref="C4">
-      <value>10uF 25V X5R</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <value>10uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8d305005-8236-4020-a82c-ae1b47a3b796</tstamps>
+      <tstamps>db24293b-a533-4929-b7dc-c2dd277e1f40</tstamps>
     </comp>
     <comp ref="C5">
-      <value>10uF 25V X5R</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <value>10nF 6.3V Ta</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H_Pad1.50x2.35mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2111161030_AVX-TAJB107K006RNJ-_C16133.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C16133</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="LCSC-Part" value="C16133"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>fd9424ca-d9fe-438b-b1c5-bfd7c8c643f9</tstamps>
     </comp>
     <comp ref="C6">
-      <value>10V 10uF X5R</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <value>1uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>db24293b-a533-4929-b7dc-c2dd277e1f40</tstamps>
+      <tstamps>1fb11941-a2fa-4f81-9ff9-3dc256e034c9</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810121815_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C1653</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C1653"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f9eaf8a8-cc66-49c7-80fe-3fb71764606b</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>10nF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1d00ebe-8531-4c95-a15c-b3c6de6a3a8b</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>2.2uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a00f759e-b0fe-48c2-af86-df9f34cb9dd5</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>10uF, NPO/X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b5a3c95-9bfb-4635-8e1c-8c1b98b32254</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>1nF, NPO</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e2f1b1d-4b33-4222-892a-1067db4e1ece</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>2.2uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a42cd720-f04a-4ce4-92f2-0274d672efe0</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>2.2uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5f57274-1b74-486e-b103-8434fcbde531</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>10uF, NPO/X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C19702</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C19702"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17802545-6334-40c5-8fa8-4524a84bc365</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>22pF 50V C0G</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810121815_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C1653</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C1653"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2e900b9-a9a0-4cca-b8c9-e6e490a11cb2</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>22pF 50V C0G</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810121815_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C1653</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC-Part" value="C1653"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c082a7db-508b-467e-b30b-bb75c6f3afef</tstamps>
     </comp>
     <comp ref="D1">
-      <value>B5827WS-TP</value>
+      <value>B5817WS-TP</value>
       <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>https://www.mccsemi.com/pdf/Products/B5817WS-B5819WS(SOD-323).PDF</datasheet>
+      <fields>
+        <field name="LCSC-Part">C123899</field>
+      </fields>
       <libsource lib="Device" part="D_Schottky_Filled" description="Schottky diode, filled shape"/>
+      <property name="LCSC-Part" value="C123899"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>eb38b764-f3cc-4d2a-8919-e43892994822</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>B5817WS-TP</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://www.mccsemi.com/pdf/Products/B5817WS-B5819WS(SOD-323).PDF</datasheet>
+      <fields>
+        <field name="LCSC-Part">C123899</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Filled" description="Schottky diode, filled shape"/>
+      <property name="LCSC-Part" value="C123899"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd25f38b-3676-47dc-9539-4315a38cf794</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>B5817WS-TP</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://www.mccsemi.com/pdf/Products/B5817WS-B5819WS(SOD-323).PDF</datasheet>
+      <fields>
+        <field name="LCSC-Part">C123899</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Filled" description="Schottky diode, filled shape"/>
+      <property name="LCSC-Part" value="C123899"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ab7e5c3-5486-4a6d-a9a3-f0fb8b86f03d</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>B5817WS-TP</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://www.mccsemi.com/pdf/Products/B5817WS-B5819WS(SOD-323).PDF</datasheet>
+      <fields>
+        <field name="LCSC-Part">C123899</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_Filled" description="Schottky diode, filled shape"/>
+      <property name="LCSC-Part" value="C123899"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e10e8d6d-ff37-4db3-a682-0df68995bb4b</tstamps>
     </comp>
     <comp ref="J1">
       <value>USB_B_Micro</value>
       <footprint>Connector_USB:USB_Micro-B_Molex-105017-0001</footprint>
       <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6a33cda9-f8ec-49d5-99d6-fd9061f65ca9</tstamps>
     </comp>
     <comp ref="J2">
-      <value>Screw_Terminal_01x02</value>
+      <value>External Power</value>
       <footprint>Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e098da95-a45b-4e22-a9bd-4cfc0a054c71</tstamps>
     </comp>
     <comp ref="J3">
-      <value>Conn_01x04</value>
+      <value>AIO/I2C</value>
       <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>82d915c8-b47c-4ee0-a115-9fc04ac3970e</tstamps>
     </comp>
     <comp ref="J4">
-      <value>Conn_01x02</value>
+      <value>Solar</value>
       <footprint>Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>51acd515-f391-4a99-bd6c-504a733249df</tstamps>
+      <tstamps>7e23faa5-c003-4ea8-9b98-0cd52db99848</tstamps>
     </comp>
     <comp ref="J5">
-      <value>Conn_01x04</value>
+      <value>RXTX+Power</value>
       <footprint>Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e0e8a3be-a469-4bbe-aa37-9ad0d9a9dea2</tstamps>
     </comp>
     <comp ref="J6">
-      <value>SMA Antenna</value>
-      <footprint>Connector_Coaxial:SMA_Amphenol_901-143_Horizontal</footprint>
+      <value>SMA</value>
+      <footprint>Connector_Coaxial:SMA_Amphenol_901-144_Vertical</footprint>
       <datasheet> ~</datasheet>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7a697045-0611-4664-8dcc-dfb2a4aa1701</tstamps>
     </comp>
-    <comp ref="JP1">
-      <value>SolderJumper_3_Open</value>
-      <footprint>Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm</footprint>
-      <libsource lib="Jumper" part="SolderJumper_3_Open" description="Solder Jumper, 3-pole, open"/>
+    <comp ref="J7">
+      <value>SPI</value>
+      <footprint>Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>24977d6b-17e2-4e15-941b-3effcd13bf2d</tstamps>
+      <tstamps>708f0346-bb99-4055-ad19-07185a4fa006</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37945251-8e34-4d85-9e9d-82a9160102c8</tstamps>
+    </comp>
+    <comp ref="JP2">
+      <value>Solar Powered</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45654df4-525b-4b75-9a35-1055feaa07d2</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>10uH, 250mOhm</value>
+      <footprint>Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f37e25b8-23d1-4619-8949-67d22c5c2b6b</tstamps>
     </comp>
     <comp ref="Q1">
       <value>IRLML5203</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.infineon.com/dgdl/irlml5203pbf.pdf?fileId=5546d462533600a40153566868da261d</datasheet>
+      <fields>
+        <field name="LCSC-Part">C2985623</field>
+      </fields>
       <libsource lib="Transistor_FET" part="IRLML5203" description="-3.0A Id, -30V Vds, 98mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"/>
+      <property name="LCSC-Part" value="C2985623"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ffb0c3ef-e60a-4ce5-b227-bf4c3ccf3ec9</tstamps>
     </comp>
-    <comp ref="Q2">
-      <value>2N7002</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</datasheet>
-      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>c5acb1ce-6856-47a0-afa9-8a8c41d27e47</tstamps>
-    </comp>
-    <comp ref="Q3">
-      <value>2N7002</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</datasheet>
-      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>db4804c8-8ad8-4e11-ba99-f67df8c1cdd9</tstamps>
-    </comp>
     <comp ref="R1">
-      <value>100kΩ</value>
+      <value>100k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C2907421</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C2907421"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7d135eb3-a6bb-4452-a33d-f0222a002235</tstamps>
     </comp>
     <comp ref="R2">
-      <value>10kΩ</value>
+      <value>100k</value>
       <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C17902</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C17902"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b3e6a98c-9eb8-47db-91b1-fbc63e59126e</tstamps>
+      <tstamps>8ea2df96-538c-45d8-9be5-e373ee871723</tstamps>
     </comp>
     <comp ref="R3">
-      <value>10kΩ</value>
+      <value>1M</value>
       <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C17902</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C17902"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>e3262f4c-6147-420d-b0f0-d5087b953053</tstamps>
+      <tstamps>c2eb3ff6-9d16-44bb-98a5-8b996f6cfb95</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>430k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C17902</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C17902"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8d7234c-1ae4-4dc1-82c3-ebb41aedca89</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C17902</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C17902"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a61519cf-523d-4176-85e1-df3f0da2f786</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>430k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C17902</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C17902"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>24b3b75f-469f-405e-bd01-8c2f38b370e4</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1M, 0.1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C17902</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C17902"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e8c7500-5176-4230-8e8d-4518091a5af7</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>430k, 0,1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC-Part">C17902</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC-Part" value="C17902"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ffc71fc-6fe8-4cb8-b57a-239f6f0fb3bf</tstamps>
     </comp>
     <comp ref="U1">
-      <value>CH340G</value>
-      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
-      <datasheet>http://www.datasheet5.com/pdf-local-2195953</datasheet>
-      <libsource lib="Interface_USB" part="CH340G" description="USB serial converter, UART, SOIC-16"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>abed1063-9d48-46e3-891c-bc886ad56ee9</tstamps>
-    </comp>
-    <comp ref="U2">
       <value>AP1117-33</value>
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
       <datasheet>http://www.diodes.com/datasheets/AP1117.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C108785 </field>
+      </fields>
       <libsource lib="Regulator_Linear" part="AP1117-33" description="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
+      <property name="LCSC-Part" value="C108785 "/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2b786b93-a1e5-48fa-a22a-67937a67e954</tstamps>
     </comp>
-    <comp ref="U3">
-      <value>ESP32-WROOM-32</value>
-      <footprint>RF_Module:ESP32-WROOM-32</footprint>
-      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</datasheet>
-      <libsource lib="RF_Module" part="ESP32-WROOM-32" description="RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"/>
+    <comp ref="U2">
+      <value>CH340G</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>http://www.datasheet5.com/pdf-local-2195953</datasheet>
+      <fields>
+        <field name="LCSC-Part">C14267</field>
+      </fields>
+      <libsource lib="Interface_USB" part="CH340G" description="USB serial converter, UART, SOIC-16"/>
+      <property name="LCSC-Part" value="C14267"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-0000627d6b1d</tstamps>
+      <tstamps>abed1063-9d48-46e3-891c-bc886ad56ee9</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>LP2985-3.3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lp2985.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="LP2985-3.3" description="150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d1ba41e-4eb0-4f7c-93c5-8c8987eb3970</tstamps>
     </comp>
     <comp ref="U4">
       <value>RFM95W-868S2</value>
       <footprint>RF_Module:HOPERF_RFM9XW_SMD</footprint>
       <datasheet>https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C2844473</field>
+      </fields>
       <libsource lib="RF_Module" part="RFM95W-868S2" description="Low power long range transceiver module, SPI and parallel interface, 868 MHz, spreading factor 6 to12, bandwith 7.8 to 500kHz, -111 to -148 dBm, SMD-16, DIP-16"/>
+      <property name="LCSC-Part" value="C2844473"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000627e7fe8</tstamps>
     </comp>
-    <comp ref="Y1">
-      <value>Crystal</value>
-      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+    <comp ref="U5">
+      <value>SPV1040TTR</value>
+      <footprint>digikey-footprints:TSSOP-8_W4.4mm</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/0d/30/c2/1a/92/03/48/cb/CD00287506.pdf/files/CD00287506.pdf/jcr:content/translations/en.CD00287506.pdf</datasheet>
+      <fields>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="DK_Datasheet_Link">http://www.st.com/content/ccc/resource/technical/document/datasheet/0d/30/c2/1a/92/03/48/cb/CD00287506.pdf/files/CD00287506.pdf/jcr:content/translations/en.CD00287506.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/stmicroelectronics/SPV1040TTR/497-11288-1-ND/2672709</field>
+        <field name="Description">IC SOLAR BATTERY CHARGER 8TSSOP</field>
+        <field name="Digi-Key_PN">497-11288-1-ND</field>
+        <field name="Family">PMIC - Battery Chargers</field>
+        <field name="MPN">SPV1040TTR</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_PMIC-Battery-Chargers" part="SPV1040TTR" description="IC SOLAR BATTERY CHARGER 8TSSOP"/>
+      <property name="Digi-Key_PN" value="497-11288-1-ND"/>
+      <property name="MPN" value="SPV1040TTR"/>
+      <property name="Category" value="Integrated Circuits (ICs)"/>
+      <property name="Family" value="PMIC - Battery Chargers"/>
+      <property name="DK_Datasheet_Link" value="http://www.st.com/content/ccc/resource/technical/document/datasheet/0d/30/c2/1a/92/03/48/cb/CD00287506.pdf/files/CD00287506.pdf/jcr:content/translations/en.CD00287506.pdf"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/stmicroelectronics/SPV1040TTR/497-11288-1-ND/2672709"/>
+      <property name="Description" value="IC SOLAR BATTERY CHARGER 8TSSOP"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
+      <property name="Status" value="Active"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32-LoRA-ADIO.kicad_sch"/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f9bcd453-3dc7-450b-aba1-ba907e08047f</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>ATmega328P-A</value>
+      <footprint>Package_QFP:TQFP-32_7x7mm_P0.8mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</datasheet>
+      <libsource lib="MCU_Microchip_ATmega" part="ATmega328P-A" description="20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, TQFP-32"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b1d381dd-39a1-4ddd-84d5-fbff9840e3f9</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>DS3231M</value>
+      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/DS3231.pdf</datasheet>
+      <libsource lib="Timer_RTC" part="DS3231M" description="Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8700c9a-68e0-4752-b579-0bf8f527d6d0</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>12MHz</value>
+      <footprint>Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2103291203_Yangxing-Tech-X322512MSB4SI_C9002.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C9002</field>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
+      <property name="LCSC-Part" value="C9002"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>dae8d2e2-f0f6-452f-804e-1636fcd51df2</tstamps>
+    </comp>
+    <comp ref="Y2">
+      <value>8MHz</value>
+      <footprint>Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2103291203_Yangxing-Tech-X322512MSB4SI_C9002.pdf</datasheet>
+      <fields>
+        <field name="LCSC-Part">C9002</field>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
+      <property name="LCSC-Part" value="C9002"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ATMega328-LoRa-Sol-ADIO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc7c8933-149f-492a-a686-752715ae359c</tstamps>
     </comp>
   </components>
   <libparts>
@@ -334,6 +738,39 @@
         <pin num="4" name="Pin_4" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="C">
       <description>Unpolarized capacitor</description>
       <docs>~</docs>
@@ -350,20 +787,38 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="Crystal">
-      <description>Two pin crystal</description>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND24">
+      <description>Four pin crystal, GND on pins 2 and 4</description>
       <docs>~</docs>
       <footprints>
         <fp>Crystal*</fp>
       </footprints>
       <fields>
         <field name="Reference">Y</field>
-        <field name="Value">Crystal</field>
+        <field name="Value">Crystal_GND24</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="D_Schottky_Filled">
@@ -383,6 +838,25 @@
       <pins>
         <pin num="1" name="K" type="passive"/>
         <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="R">
@@ -432,75 +906,67 @@
         <pin num="16" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Jumper" part="SolderJumper_3_Open">
-      <description>Solder Jumper, 3-pole, open</description>
+    <libpart lib="Jumper" part="SolderJumper_2_Open">
+      <description>Solder Jumper, 2-pole, open</description>
       <docs>~</docs>
       <footprints>
         <fp>SolderJumper*Open*</fp>
       </footprints>
       <fields>
         <field name="Reference">JP</field>
-        <field name="Value">SolderJumper_3_Open</field>
+        <field name="Value">SolderJumper_2_Open</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="C" type="passive"/>
-        <pin num="3" name="B" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="RF_Module" part="ESP32-WROOM-32">
-      <description>RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD</description>
-      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</docs>
+    <libpart lib="MCU_Microchip_ATmega" part="ATmega328P-A">
+      <description>20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, TQFP-32</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</docs>
       <footprints>
-        <fp>ESP32?WROOM?32*</fp>
+        <fp>TQFP*7x7mm*P0.8mm*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">ESP32-WROOM-32</field>
-        <field name="Footprint">RF_Module:ESP32-WROOM-32</field>
-        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</field>
+        <field name="Value">ATmega328P-A</field>
+        <field name="Footprint">Package_QFP:TQFP-32_7x7mm_P0.8mm</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</field>
       </fields>
       <pins>
-        <pin num="1" name="GND" type="power_in"/>
-        <pin num="2" name="VDD" type="power_in"/>
-        <pin num="3" name="EN" type="input"/>
-        <pin num="4" name="SENSOR_VP" type="input"/>
-        <pin num="5" name="SENSOR_VN" type="input"/>
-        <pin num="6" name="IO34" type="input"/>
-        <pin num="7" name="IO35" type="input"/>
-        <pin num="8" name="IO32" type="bidirectional"/>
-        <pin num="9" name="IO33" type="bidirectional"/>
-        <pin num="10" name="IO25" type="bidirectional"/>
-        <pin num="11" name="IO26" type="bidirectional"/>
-        <pin num="12" name="IO27" type="bidirectional"/>
-        <pin num="13" name="IO14" type="bidirectional"/>
-        <pin num="14" name="IO12" type="bidirectional"/>
-        <pin num="15" name="GND" type="passive"/>
-        <pin num="16" name="IO13" type="bidirectional"/>
-        <pin num="17" name="SHD/SD2" type="bidirectional"/>
-        <pin num="18" name="SWP/SD3" type="bidirectional"/>
-        <pin num="19" name="SCS/CMD" type="bidirectional"/>
-        <pin num="20" name="SCK/CLK" type="bidirectional"/>
-        <pin num="21" name="SDO/SD0" type="bidirectional"/>
-        <pin num="22" name="SDI/SD1" type="bidirectional"/>
-        <pin num="23" name="IO15" type="bidirectional"/>
-        <pin num="24" name="IO2" type="bidirectional"/>
-        <pin num="25" name="IO0" type="bidirectional"/>
-        <pin num="26" name="IO4" type="bidirectional"/>
-        <pin num="27" name="IO16" type="bidirectional"/>
-        <pin num="28" name="IO17" type="bidirectional"/>
-        <pin num="29" name="IO5" type="bidirectional"/>
-        <pin num="30" name="IO18" type="bidirectional"/>
-        <pin num="31" name="IO19" type="bidirectional"/>
-        <pin num="32" name="NC" type="no_connect"/>
-        <pin num="33" name="IO21" type="bidirectional"/>
-        <pin num="34" name="RXD0/IO3" type="bidirectional"/>
-        <pin num="35" name="TXD0/IO1" type="bidirectional"/>
-        <pin num="36" name="IO22" type="bidirectional"/>
-        <pin num="37" name="IO23" type="bidirectional"/>
-        <pin num="38" name="GND" type="passive"/>
-        <pin num="39" name="GND" type="passive"/>
+        <pin num="1" name="PD3" type="bidirectional"/>
+        <pin num="2" name="PD4" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="VCC" type="passive"/>
+        <pin num="7" name="XTAL1/PB6" type="bidirectional"/>
+        <pin num="8" name="XTAL2/PB7" type="bidirectional"/>
+        <pin num="9" name="PD5" type="bidirectional"/>
+        <pin num="10" name="PD6" type="bidirectional"/>
+        <pin num="11" name="PD7" type="bidirectional"/>
+        <pin num="12" name="PB0" type="bidirectional"/>
+        <pin num="13" name="PB1" type="bidirectional"/>
+        <pin num="14" name="PB2" type="bidirectional"/>
+        <pin num="15" name="PB3" type="bidirectional"/>
+        <pin num="16" name="PB4" type="bidirectional"/>
+        <pin num="17" name="PB5" type="bidirectional"/>
+        <pin num="18" name="AVCC" type="power_in"/>
+        <pin num="19" name="ADC6" type="input"/>
+        <pin num="20" name="AREF" type="passive"/>
+        <pin num="21" name="GND" type="passive"/>
+        <pin num="22" name="ADC7" type="input"/>
+        <pin num="23" name="PC0" type="bidirectional"/>
+        <pin num="24" name="PC1" type="bidirectional"/>
+        <pin num="25" name="PC2" type="bidirectional"/>
+        <pin num="26" name="PC3" type="bidirectional"/>
+        <pin num="27" name="PC4" type="bidirectional"/>
+        <pin num="28" name="PC5" type="bidirectional"/>
+        <pin num="29" name="~{RESET}/PC6" type="bidirectional"/>
+        <pin num="30" name="PD0" type="bidirectional"/>
+        <pin num="31" name="PD1" type="bidirectional"/>
+        <pin num="32" name="PD2" type="bidirectional"/>
       </pins>
     </libpart>
     <libpart lib="RF_Module" part="RFM95W-868S2">
@@ -551,22 +1017,55 @@
         <pin num="3" name="VI" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Transistor_FET" part="2N7002">
-      <description>0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23</description>
-      <docs>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</docs>
+    <libpart lib="Regulator_Linear" part="LP2985-3.3">
+      <description>150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lp2985.pdf</docs>
       <footprints>
         <fp>SOT?23*</fp>
       </footprints>
       <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">2N7002</field>
-        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
-        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</field>
+        <field name="Reference">U</field>
+        <field name="Value">LP2985-3.3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lp2985.pdf</field>
       </fields>
       <pins>
-        <pin num="1" name="G" type="input"/>
-        <pin num="2" name="S" type="passive"/>
-        <pin num="3" name="D" type="passive"/>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="ON/~{OFF}" type="input"/>
+        <pin num="4" name="BP" type="input"/>
+        <pin num="5" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Timer_RTC" part="DS3231M">
+      <description>Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16</description>
+      <docs>http://datasheets.maximintegrated.com/en/ds/DS3231.pdf</docs>
+      <footprints>
+        <fp>SOIC*7.5x10.3mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DS3231M</field>
+        <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
+        <field name="Datasheet">http://datasheets.maximintegrated.com/en/ds/DS3231.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="32KHZ" type="open_collector"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="~{INT}/SQW" type="open_collector"/>
+        <pin num="4" name="~{RST}" type="bidirectional"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="GND" type="passive"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="GND" type="passive"/>
+        <pin num="12" name="GND" type="passive"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="VBAT" type="power_in"/>
+        <pin num="15" name="SDA" type="bidirectional"/>
+        <pin num="16" name="SCL" type="input"/>
       </pins>
     </libpart>
     <libpart lib="Transistor_FET" part="IRLML5203">
@@ -587,6 +1086,35 @@
         <pin num="3" name="D" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="dk_PMIC-Battery-Chargers" part="SPV1040TTR">
+      <description>IC SOLAR BATTERY CHARGER 8TSSOP</description>
+      <docs>http://www.st.com/content/ccc/resource/technical/document/datasheet/0d/30/c2/1a/92/03/48/cb/CD00287506.pdf/files/CD00287506.pdf/jcr:content/translations/en.CD00287506.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SPV1040TTR</field>
+        <field name="Footprint">digikey-footprints:TSSOP-8_W4.4mm</field>
+        <field name="Datasheet">http://www.st.com/content/ccc/resource/technical/document/datasheet/0d/30/c2/1a/92/03/48/cb/CD00287506.pdf/files/CD00287506.pdf/jcr:content/translations/en.CD00287506.pdf</field>
+        <field name="Digi-Key_PN">497-11288-1-ND</field>
+        <field name="MPN">SPV1040TTR</field>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="Family">PMIC - Battery Chargers</field>
+        <field name="DK_Datasheet_Link">http://www.st.com/content/ccc/resource/technical/document/datasheet/0d/30/c2/1a/92/03/48/cb/CD00287506.pdf/files/CD00287506.pdf/jcr:content/translations/en.CD00287506.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/stmicroelectronics/SPV1040TTR/497-11288-1-ND/2672709</field>
+        <field name="Description">IC SOLAR BATTERY CHARGER 8TSSOP</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MPP-SET" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="LX" type="power_in"/>
+        <pin num="4" name="VOUT" type="power_out"/>
+        <pin num="5" name="VCTRL" type="input"/>
+        <pin num="6" name="ICTRL_MINUS" type="input"/>
+        <pin num="7" name="ICTRL_PLUS" type="input"/>
+        <pin num="8" name="XSHUT" type="input"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
@@ -604,260 +1132,340 @@
     <library logical="Jumper">
       <uri>D:\Program Files\KiCad\6.0\share\kicad\symbols\/Jumper.kicad_sym</uri>
     </library>
+    <library logical="MCU_Microchip_ATmega">
+      <uri>D:\Program Files\KiCad\6.0\share\kicad\symbols\/MCU_Microchip_ATmega.kicad_sym</uri>
+    </library>
     <library logical="RF_Module">
       <uri>D:\Program Files\KiCad\6.0\share\kicad\symbols\/RF_Module.kicad_sym</uri>
     </library>
     <library logical="Regulator_Linear">
       <uri>D:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
     </library>
+    <library logical="Timer_RTC">
+      <uri>D:\Program Files\KiCad\6.0\share\kicad\symbols\/Timer_RTC.kicad_sym</uri>
+    </library>
     <library logical="Transistor_FET">
       <uri>D:\Program Files\KiCad\6.0\share\kicad\symbols\/Transistor_FET.kicad_sym</uri>
     </library>
+    <library logical="dk_PMIC-Battery-Chargers">
+      <uri>D:\Git\ATMega328-LoRa-Sol-ADIO/digikey-kicad-library-master/digikey-symbols/dk_PMIC-Battery-Chargers.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="+3V3">
-      <node ref="C5" pin="1" pintype="passive"/>
-      <node ref="C6" pin="2" pintype="passive"/>
+    <net code="1" name="+3.3VA">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
-      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
-      <node ref="U1" pin="16" pinfunction="VCC" pintype="power_in"/>
-      <node ref="U1" pin="4" pinfunction="V3" pintype="passive"/>
-      <node ref="U2" pin="2" pinfunction="VO" pintype="power_out"/>
-      <node ref="U3" pin="2" pinfunction="VDD" pintype="power_in"/>
+      <node ref="J7" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="VOUT" pintype="power_out"/>
       <node ref="U4" pin="13" pinfunction="3.3V" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="VCC" pintype="power_in"/>
     </net>
-    <net code="2" name="+5V">
-      <node ref="C4" pin="1" pintype="passive"/>
+    <net code="2" name="+3V3">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="VO" pintype="power_out"/>
+      <node ref="U2" pin="16" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="V3" pintype="passive"/>
+      <node ref="U6" pin="18" pinfunction="AVCC" pintype="power_in"/>
+      <node ref="U6" pin="20" pinfunction="AREF" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U6" pin="6" pinfunction="VCC" pintype="passive"/>
+    </net>
+    <net code="3" name="+5V">
+      <node ref="C10" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="U2" pin="3" pinfunction="VI" pintype="power_in"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="MPP-SET" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="XSHUT" pintype="input"/>
     </net>
-    <net code="3" name="DTR">
-      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R3" pin="2" pintype="passive"/>
-      <node ref="U1" pin="13" pinfunction="~{DTR}" pintype="output"/>
+    <net code="4" name="+BATT">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="JP2" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VI" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="VOUT" pintype="power_out"/>
+      <node ref="U5" pin="6" pinfunction="ICTRL_MINUS" pintype="input"/>
+      <node ref="U5" pin="7" pinfunction="ICTRL_PLUS" pintype="input"/>
     </net>
-    <net code="4" name="EN_ESP32">
-      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="U3" pin="3" pinfunction="EN" pintype="input"/>
+    <net code="5" name="AT-RST">
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U6" pin="29" pinfunction="~{RESET}/PC6" pintype="bidirectional"/>
     </net>
-    <net code="5" name="ESP-AI">
-      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="U3" pin="33" pinfunction="IO21" pintype="bidirectional"/>
+    <net code="6" name="CLOCK_INT">
+      <node ref="U6" pin="10" pinfunction="PD6" pintype="bidirectional"/>
+      <node ref="U7" pin="3" pinfunction="~{INT}/SQW" pintype="open_collector"/>
     </net>
-    <net code="6" name="ESP-AO">
-      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="U3" pin="36" pinfunction="IO22" pintype="bidirectional"/>
+    <net code="7" name="DO_POWERON">
+      <node ref="U3" pin="3" pinfunction="ON/~{OFF}" pintype="input"/>
+      <node ref="U6" pin="9" pinfunction="PD5" pintype="bidirectional"/>
     </net>
-    <net code="7" name="ESP-DIO">
-      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="U3" pin="11" pinfunction="IO26" pintype="bidirectional"/>
+    <net code="8" name="DTR">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="~{DTR}" pintype="output"/>
     </net>
-    <net code="8" name="ESP-RX">
-      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="U3" pin="27" pinfunction="IO16" pintype="bidirectional"/>
-    </net>
-    <net code="9" name="ESP-TX">
-      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="U3" pin="28" pinfunction="IO17" pintype="bidirectional"/>
-    </net>
-    <net code="10" name="Earth">
+    <net code="9" name="Earth">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="BT2" pin="2" pinfunction="-" pintype="passive"/>
       <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
-      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
-      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
       <node ref="J1" pin="5" pinfunction="GND" pintype="power_out"/>
       <node ref="J1" pin="6" pinfunction="Shield" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="J6" pin="2" pinfunction="Ext" pintype="passive"/>
-      <node ref="JP1" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="J7" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
       <node ref="U2" pin="1" pinfunction="GND" pintype="power_in"/>
-      <node ref="U3" pin="1" pinfunction="GND" pintype="power_in"/>
-      <node ref="U3" pin="15" pinfunction="GND" pintype="passive"/>
-      <node ref="U3" pin="38" pinfunction="GND" pintype="passive"/>
-      <node ref="U3" pin="39" pinfunction="GND" pintype="passive"/>
-      <node ref="U3" pin="4" pinfunction="SENSOR_VP" pintype="input"/>
-      <node ref="U3" pin="5" pinfunction="SENSOR_VN" pintype="input"/>
+      <node ref="U3" pin="2" pinfunction="GND" pintype="power_in"/>
       <node ref="U4" pin="1" pinfunction="GND" pintype="power_in"/>
       <node ref="U4" pin="10" pinfunction="GND" pintype="power_in"/>
       <node ref="U4" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="21" pinfunction="GND" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="10" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="11" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="12" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="13" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="5" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="6" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="7" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="8" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="9" pinfunction="GND" pintype="passive"/>
+      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Y1" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="Y2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Y2" pin="4" pinfunction="4" pintype="passive"/>
     </net>
-    <net code="11" name="IO0_ESP32">
-      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="U3" pin="25" pinfunction="IO0" pintype="bidirectional"/>
-    </net>
-    <net code="12" name="Lora_DIO0">
-      <node ref="U3" pin="8" pinfunction="IO32" pintype="bidirectional"/>
+    <net code="10" name="Lora_DIO0">
       <node ref="U4" pin="14" pinfunction="DIO0" pintype="bidirectional"/>
+      <node ref="U6" pin="12" pinfunction="PB0" pintype="bidirectional"/>
     </net>
-    <net code="13" name="Lora_DIO1">
-      <node ref="U3" pin="12" pinfunction="IO27" pintype="bidirectional"/>
+    <net code="11" name="Lora_DIO1">
       <node ref="U4" pin="15" pinfunction="DIO1" pintype="bidirectional"/>
+      <node ref="U6" pin="24" pinfunction="PC1" pintype="bidirectional"/>
     </net>
-    <net code="14" name="Lora_MISO">
-      <node ref="U3" pin="14" pinfunction="IO12" pintype="bidirectional"/>
+    <net code="12" name="Lora_MISO">
+      <node ref="J7" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="U4" pin="2" pinfunction="MISO" pintype="output"/>
+      <node ref="U6" pin="16" pinfunction="PB4" pintype="bidirectional"/>
     </net>
-    <net code="15" name="Lora_MOSI">
-      <node ref="U3" pin="16" pinfunction="IO13" pintype="bidirectional"/>
+    <net code="13" name="Lora_MOSI">
+      <node ref="J7" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="U4" pin="3" pinfunction="MOSI" pintype="input"/>
+      <node ref="U6" pin="15" pinfunction="PB3" pintype="bidirectional"/>
     </net>
-    <net code="16" name="Lora_NSS">
-      <node ref="U3" pin="23" pinfunction="IO15" pintype="bidirectional"/>
+    <net code="14" name="Lora_NSS">
       <node ref="U4" pin="5" pinfunction="NSS" pintype="input"/>
+      <node ref="U6" pin="14" pinfunction="PB2" pintype="bidirectional"/>
     </net>
-    <net code="17" name="Lora_RST">
-      <node ref="U3" pin="9" pinfunction="IO33" pintype="bidirectional"/>
+    <net code="15" name="Lora_RST">
       <node ref="U4" pin="6" pinfunction="RESET" pintype="bidirectional"/>
+      <node ref="U6" pin="13" pinfunction="PB1" pintype="bidirectional"/>
     </net>
-    <net code="18" name="Lora_SCK">
-      <node ref="U3" pin="13" pinfunction="IO14" pintype="bidirectional"/>
+    <net code="16" name="Lora_SCK">
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U4" pin="4" pinfunction="SCK" pintype="input"/>
+      <node ref="U6" pin="17" pinfunction="PB5" pintype="bidirectional"/>
     </net>
-    <net code="19" name="Net-(C1-Pad1)">
-      <node ref="C1" pin="1" pintype="passive"/>
+    <net code="17" name="Net-(BT1-Pad1)">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="JP2" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(BT2-Pad1)">
+      <node ref="BT2" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="U7" pin="14" pinfunction="VBAT" pintype="power_in"/>
+    </net>
+    <net code="19" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="XI" pintype="input"/>
+      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="XO" pintype="output"/>
+      <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="BP" pintype="input"/>
+    </net>
+    <net code="22" name="Net-(C11-Pad1)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="VCTRL" pintype="input"/>
+    </net>
+    <net code="23" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U6" pin="22" pinfunction="ADC7" pintype="input"/>
+    </net>
+    <net code="24" name="Net-(C13-Pad1)">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U6" pin="19" pinfunction="ADC6" pintype="input"/>
+    </net>
+    <net code="25" name="Net-(C15-Pad1)">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="U6" pin="7" pinfunction="XTAL1/PB6" pintype="bidirectional"/>
+      <node ref="Y2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(C16-Pad1)">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="XTAL2/PB7" pintype="bidirectional"/>
+      <node ref="Y2" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(D1-Pad2)">
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="VBUS" pintype="power_out"/>
     </net>
-    <net code="20" name="Net-(C2-Pad1)">
-      <node ref="C2" pin="1" pintype="passive"/>
-      <node ref="U1" pin="7" pinfunction="XI" pintype="input"/>
-      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="28" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(C3-Pad1)">
-      <node ref="C3" pin="1" pintype="passive"/>
-      <node ref="U1" pin="8" pinfunction="XO" pintype="output"/>
-      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
-    </net>
-    <net code="22" name="Net-(J2-Pad2)">
+    <net code="29" name="Net-(J2-Pad2)">
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(J4-Pad2)">
-      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
-    </net>
-    <net code="24" name="Net-(J6-Pad1)">
+    <net code="30" name="Net-(J6-Pad1)">
       <node ref="J6" pin="1" pinfunction="In" pintype="passive"/>
       <node ref="U4" pin="9" pinfunction="ANT" pintype="bidirectional"/>
     </net>
-    <net code="25" name="Net-(Q1-Pad1)">
+    <net code="31" name="Net-(L1-Pad2)">
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="LX" pintype="power_in"/>
+    </net>
+    <net code="32" name="Net-(Q1-Pad1)">
       <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R1" pin="2" pintype="passive"/>
     </net>
-    <net code="26" name="Net-(Q2-Pad1)">
-      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R3" pin="1" pintype="passive"/>
+    <net code="33" name="RX">
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="TXD" pintype="output"/>
+      <node ref="U6" pin="30" pinfunction="PD0" pintype="bidirectional"/>
     </net>
-    <net code="27" name="Net-(Q3-Pad1)">
-      <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R2" pin="2" pintype="passive"/>
+    <net code="34" name="SCL">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U6" pin="28" pinfunction="PC5" pintype="bidirectional"/>
+      <node ref="U7" pin="16" pinfunction="SCL" pintype="input"/>
     </net>
-    <net code="28" name="RTS">
-      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R2" pin="1" pintype="passive"/>
-      <node ref="U1" pin="14" pinfunction="~{RTS}" pintype="output"/>
+    <net code="35" name="SDA">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U6" pin="27" pinfunction="PC4" pintype="bidirectional"/>
+      <node ref="U7" pin="15" pinfunction="SDA" pintype="bidirectional"/>
     </net>
-    <net code="29" name="UART-RX">
-      <node ref="U1" pin="3" pinfunction="RXD" pintype="input"/>
-      <node ref="U3" pin="35" pinfunction="TXD0/IO1" pintype="bidirectional"/>
+    <net code="36" name="SPI_SS">
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U6" pin="23" pinfunction="PC0" pintype="bidirectional"/>
     </net>
-    <net code="30" name="UART-TX">
-      <node ref="U1" pin="2" pinfunction="TXD" pintype="output"/>
-      <node ref="U3" pin="34" pinfunction="RXD0/IO3" pintype="bidirectional"/>
+    <net code="37" name="TX">
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="RXD" pintype="input"/>
+      <node ref="U6" pin="31" pinfunction="PD1" pintype="bidirectional"/>
     </net>
-    <net code="31" name="USB-D+">
+    <net code="38" name="USB-D+">
       <node ref="J1" pin="3" pinfunction="D+" pintype="bidirectional"/>
-      <node ref="U1" pin="5" pinfunction="UD+" pintype="bidirectional"/>
+      <node ref="U2" pin="5" pinfunction="UD+" pintype="bidirectional"/>
     </net>
-    <net code="32" name="USB-D-">
+    <net code="39" name="USB-D-">
       <node ref="J1" pin="2" pinfunction="D-" pintype="bidirectional"/>
-      <node ref="U1" pin="6" pinfunction="UD-" pintype="bidirectional"/>
+      <node ref="U2" pin="6" pinfunction="UD-" pintype="bidirectional"/>
     </net>
-    <net code="33" name="unconnected-(J1-Pad4)">
+    <net code="40" name="unconnected-(J1-Pad4)">
       <node ref="J1" pin="4" pinfunction="ID" pintype="passive+no_connect"/>
     </net>
-    <net code="34" name="unconnected-(U1-Pad9)">
-      <node ref="U1" pin="9" pinfunction="~{CTS}" pintype="input+no_connect"/>
+    <net code="41" name="unconnected-(U2-Pad9)">
+      <node ref="U2" pin="9" pinfunction="~{CTS}" pintype="input+no_connect"/>
     </net>
-    <net code="35" name="unconnected-(U1-Pad10)">
-      <node ref="U1" pin="10" pinfunction="~{DSR}" pintype="input+no_connect"/>
+    <net code="42" name="unconnected-(U2-Pad10)">
+      <node ref="U2" pin="10" pinfunction="~{DSR}" pintype="input+no_connect"/>
     </net>
-    <net code="36" name="unconnected-(U1-Pad11)">
-      <node ref="U1" pin="11" pinfunction="~{RI}" pintype="input+no_connect"/>
+    <net code="43" name="unconnected-(U2-Pad11)">
+      <node ref="U2" pin="11" pinfunction="~{RI}" pintype="input+no_connect"/>
     </net>
-    <net code="37" name="unconnected-(U1-Pad12)">
-      <node ref="U1" pin="12" pinfunction="~{DCD}" pintype="input+no_connect"/>
+    <net code="44" name="unconnected-(U2-Pad12)">
+      <node ref="U2" pin="12" pinfunction="~{DCD}" pintype="input+no_connect"/>
     </net>
-    <net code="38" name="unconnected-(U1-Pad15)">
-      <node ref="U1" pin="15" pinfunction="R232" pintype="input+no_connect"/>
+    <net code="45" name="unconnected-(U2-Pad14)">
+      <node ref="U2" pin="14" pinfunction="~{RTS}" pintype="output+no_connect"/>
     </net>
-    <net code="39" name="unconnected-(U3-Pad6)">
-      <node ref="U3" pin="6" pinfunction="IO34" pintype="input+no_connect"/>
+    <net code="46" name="unconnected-(U2-Pad15)">
+      <node ref="U2" pin="15" pinfunction="R232" pintype="input+no_connect"/>
     </net>
-    <net code="40" name="unconnected-(U3-Pad7)">
-      <node ref="U3" pin="7" pinfunction="IO35" pintype="input+no_connect"/>
-    </net>
-    <net code="41" name="unconnected-(U3-Pad10)">
-      <node ref="U3" pin="10" pinfunction="IO25" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="42" name="unconnected-(U3-Pad17)">
-      <node ref="U3" pin="17" pinfunction="SHD/SD2" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="43" name="unconnected-(U3-Pad18)">
-      <node ref="U3" pin="18" pinfunction="SWP/SD3" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="44" name="unconnected-(U3-Pad19)">
-      <node ref="U3" pin="19" pinfunction="SCS/CMD" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="45" name="unconnected-(U3-Pad20)">
-      <node ref="U3" pin="20" pinfunction="SCK/CLK" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="46" name="unconnected-(U3-Pad21)">
-      <node ref="U3" pin="21" pinfunction="SDO/SD0" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="47" name="unconnected-(U3-Pad22)">
-      <node ref="U3" pin="22" pinfunction="SDI/SD1" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="48" name="unconnected-(U3-Pad24)">
-      <node ref="U3" pin="24" pinfunction="IO2" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="49" name="unconnected-(U3-Pad26)">
-      <node ref="U3" pin="26" pinfunction="IO4" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="50" name="unconnected-(U3-Pad29)">
-      <node ref="U3" pin="29" pinfunction="IO5" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="51" name="unconnected-(U3-Pad30)">
-      <node ref="U3" pin="30" pinfunction="IO18" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="52" name="unconnected-(U3-Pad31)">
-      <node ref="U3" pin="31" pinfunction="IO19" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="53" name="unconnected-(U3-Pad32)">
-      <node ref="U3" pin="32" pinfunction="NC" pintype="no_connect"/>
-    </net>
-    <net code="54" name="unconnected-(U3-Pad37)">
-      <node ref="U3" pin="37" pinfunction="IO23" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="55" name="unconnected-(U4-Pad7)">
+    <net code="47" name="unconnected-(U4-Pad7)">
       <node ref="U4" pin="7" pinfunction="DIO5" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="56" name="unconnected-(U4-Pad11)">
+    <net code="48" name="unconnected-(U4-Pad11)">
       <node ref="U4" pin="11" pinfunction="DIO3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="57" name="unconnected-(U4-Pad12)">
+    <net code="49" name="unconnected-(U4-Pad12)">
       <node ref="U4" pin="12" pinfunction="DIO4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="58" name="unconnected-(U4-Pad16)">
+    <net code="50" name="unconnected-(U4-Pad16)">
       <node ref="U4" pin="16" pinfunction="DIO2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U6-Pad1)">
+      <node ref="U6" pin="1" pinfunction="PD3" pintype="bidirectional"/>
+    </net>
+    <net code="52" name="unconnected-(U6-Pad2)">
+      <node ref="U6" pin="2" pinfunction="PD4" pintype="bidirectional"/>
+    </net>
+    <net code="53" name="unconnected-(U6-Pad11)">
+      <node ref="U6" pin="11" pinfunction="PD7" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="unconnected-(U6-Pad25)">
+      <node ref="U6" pin="25" pinfunction="PC2" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="unconnected-(U6-Pad26)">
+      <node ref="U6" pin="26" pinfunction="PC3" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="unconnected-(U6-Pad32)">
+      <node ref="U6" pin="32" pinfunction="PD2" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="unconnected-(U7-Pad1)">
+      <node ref="U7" pin="1" pinfunction="32KHZ" pintype="open_collector"/>
+    </net>
+    <net code="58" name="unconnected-(U7-Pad4)">
+      <node ref="U7" pin="4" pinfunction="~{RST}" pintype="bidirectional"/>
     </net>
   </nets>
 </export>
